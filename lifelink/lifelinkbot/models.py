@@ -7,11 +7,12 @@ class UserMessage(models.Model):
     created_at = models.TimeField(auto_now_add=True)
     
     def __str__(self):
-        return {self.message, self.created_at}
+        return f'{self.message}, {self.created_at}'
     
     
 class BotResponse(models.Model):
     response = models.TextField()
+    # help_type = models.Choices()
     
     def __str__(self):
         return self.response
