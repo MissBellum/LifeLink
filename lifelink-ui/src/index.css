@@ -13,7 +13,7 @@ code {
 }
 
 /* Header */
-.app-header {
+.app__header {
   position: fixed;  
   top: 0; 
   left: 0;
@@ -25,19 +25,19 @@ code {
   z-index: 1000;
 }
 
-.header-text {
+.header__text {
   margin: 5px 30px;
   font-size: 20px;
 }
 
 /* Main content */
-.page-content {
+.home__content {
   margin-top: 60px;
   padding: 20px;
 }
 
 /* Input Form */
-.prompt-div {
+.home__prompt__div {
   display: flex;
   align-items: center;
   margin: 10px 20px;
@@ -46,7 +46,7 @@ code {
   /* border-radius: 10%; */
 }
 
-.prompt-input {
+.home__prompt {
   margin: 10px 10px;
   width: 90%;     
   height: 25px; 
@@ -59,18 +59,20 @@ code {
   transition: border-color 0.3s ease; 
 }
 
-.prompt-input:focus {
+.home___prompt:focus {
   border-color: #ff6200;
 }
 
-.submit-icon {
+.home__submit__icon {
   background-color: #6f6f6f;
+  color: #ffffff;
+  border: 2px solid #4e4e4e;
   border-radius: 50%;
   padding: 10px;
 }
 
-.submit-icon:hover {
+.home__submit__icon:hover {
   background-color: #ff6200;
-
+  transition: background-color 0.3s ease; 
 }
 

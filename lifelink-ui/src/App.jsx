@@ -4,15 +4,15 @@ import InputForm from "./components/InputForm";
 function App(props) {
   return (
     <div className="app">
-      <div className="app-header">
-        <header className="header-text">
+      <div className="app__header">
+        <header className="header__text">
           LifeLink
         </header>
       </div>
 
       <div>
         <main>
-            <div className="page-content">
+            <div className="home__content">
               <h2>Welcome to LifeLink. How can I help?</h2>
             </div>
             
