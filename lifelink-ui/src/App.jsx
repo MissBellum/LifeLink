@@ -13,7 +13,7 @@ function App(props) {
       <div>
         <main>
             <div className="page-content">
-              <h1>Welcome to LifeLink. How can I help?</h1>
+              <h2>Welcome to LifeLink. How can I help?</h2>
             </div>
             
             <div>
