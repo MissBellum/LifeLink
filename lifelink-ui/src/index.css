@@ -59,7 +59,7 @@ code {
   transition: border-color 0.3s ease; 
 }
 
-.home___prompt:focus {
+.home__prompt:focus {
   border-color: #ff6200;
 }
 
@@ -68,7 +68,7 @@ code {
   color: #6f6f6f;
   border: 2px solid #6f6f6f;
   border-radius: 50%;
-  padding: 10px;
+  padding: 6px;
 }
 
 .home__submit__icon:hover {

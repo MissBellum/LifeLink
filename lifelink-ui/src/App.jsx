@@ -1,7 +1,9 @@
+import React from "react";
 import InputForm from "./components/InputForm";
+import Options from "./components/Options";
 
-
-function App(props) {
+function App({ options }) {
+  
   return (
     <div className="app">
       <div className="app__header">
@@ -10,18 +12,22 @@ function App(props) {
         </header>
       </div>
 
-      <div>
-        <main>
+      <main>
+        <div>
             <div className="home__content">
               <h2>Welcome to LifeLink. How can I help?</h2>
-              
             </div>
             
-            <div>
+            <section>
+              <Options options={options} />
+            </section>
+
+            <section>
               <InputForm />
-            </div>
-        </main>
-      </div>
+            </section>
+        </div>
+      </main>
+
 
     </div>
 
