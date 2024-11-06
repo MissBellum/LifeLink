@@ -56,7 +56,7 @@ code {
   resize: vertical; 
   padding: 13px 30px;    
   font-size: 1em;  
-  border: 2px solid #6f6f6f; 
+  border: 2px solid #343434; 
   outline: none; 
   transition: border-color 0.3s ease; 
 }
@@ -67,8 +67,8 @@ code {
 
 .home__submit__icon {
   background-color: #ffffff;
-  color: #6f6f6f;
-  border: 2px solid #6f6f6f;
+  color: #343434;
+  border: 2px solid #343434;
   border-radius: 50%;
   padding: 6px;
 }
@@ -79,3 +79,32 @@ code {
   transition: background-color 0.3s ease; 
 }
 
+/* Option Section */
+.options__section {
+  width: 50%;
+  height: 90%;
+}
+
+.options__div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  gap: 15px;
+  margin: 20px;
+}
+
+/* Option Items */
+.options__item {
+  width: 100px;
+  height: 162px;
+  background-color: #ffcd04b5;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #343434;
+}
+
+/* Fonts */
+.options__text {
+  font-size: 0.9em;
+}

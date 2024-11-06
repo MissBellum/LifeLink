@@ -8,7 +8,7 @@ function App({ options }) {
     <div className="app">
       <div className="app__header">
         <header className="header__text">
-          LifeLink
+          {/* LifeLink */}
         </header>
       </div>
 
@@ -18,8 +18,8 @@ function App({ options }) {
               <h2>Welcome to LifeLink. How can I help?</h2>
             </div>
             
-            <section>
-              <Options />
+            <section className="options__section">
+              <Options options={ options } />
             </section>
 
             <section>
@@ -27,7 +27,6 @@ function App({ options }) {
             </section>
         </div>
       </main>
-
 
     </div>
 
