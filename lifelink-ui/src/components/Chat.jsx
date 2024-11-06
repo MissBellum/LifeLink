@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import InputForm from "./InputForm";
 
+import axios from 'axios';
+
 function ChatUI() {
     return (
         <div>

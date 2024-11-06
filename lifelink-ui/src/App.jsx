@@ -14,6 +14,7 @@ function App(props) {
         <main>
             <div className="home__content">
               <h2>Welcome to LifeLink. How can I help?</h2>
+              
             </div>
             
             <div>
