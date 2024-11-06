@@ -12,29 +12,65 @@ code {
     monospace;
 }
 
+/* Header */
+.app-header {
+  position: fixed;  
+  top: 0; 
+  left: 0;
+  width: 100%;
+  background-color: #ff6200; 
+  color: white;
+  padding: 15px 0;
+  text-align: left;
+  z-index: 1000;
+}
+
+.header-text {
+  margin: 5px 30px;
+  font-size: 20px;
+}
+
+/* Main content */
+.page-content {
+  margin-top: 60px;
+  padding: 20px;
+}
+
 /* Input Form */
 .prompt-div {
   display: flex;
   align-items: center;
   margin: 10px 20px;
+  width: 70%;
   /* background-color: rgb(169, 169, 169); */
   /* border-radius: 10%; */
 }
 
 .prompt-input {
   margin: 10px 10px;
-  width: 80%;     
+  width: 90%;     
   height: 25px; 
   border-radius: 50px;  
   resize: vertical; 
   padding: 13px 30px;    
   font-size: 18px;  
+  border: 2px solid #313131; 
+  outline: none; 
+  transition: border-color 0.3s ease; 
+}
+
+.prompt-input:focus {
+  border-color: #ff6200;
 }
 
 .submit-icon {
-  background-color: darkgrey;
+  background-color: #1e0c01d1;
   border-radius: 50%;
   padding: 10px;
-  
+}
+
+.submit-icon:hover {
+  background-color: #ff6200;
+
 }
 
