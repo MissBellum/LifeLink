@@ -19,7 +19,7 @@ function App({ options }) {
             </div>
             
             <section>
-              <Options options={options} />
+              <Options />
             </section>
 
             <section>

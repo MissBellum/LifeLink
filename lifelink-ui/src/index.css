@@ -13,7 +13,7 @@ code {
 }
 
 /* Header */
-.app__header {
+/* .app__header {
   position: fixed;  
   top: 0; 
   left: 0;
@@ -28,16 +28,18 @@ code {
 .header__text {
   margin: 5px 30px;
   font-size: 20px;
-}
+} */
 
 /* Main content */
-.home__content {
+/* .home__content {
   margin-top: 60px;
   padding: 20px;
-}
+} */
 
 /* Input Form */
 .home__prompt__div {
+  position: absolute;
+  bottom: 10px;
   display: flex;
   align-items: center;
   margin: 10px 20px;
@@ -53,7 +55,7 @@ code {
   border-radius: 50px;  
   resize: vertical; 
   padding: 13px 30px;    
-  font-size: 18px;  
+  font-size: 1em;  
   border: 2px solid #6f6f6f; 
   outline: none; 
   transition: border-color 0.3s ease; 
