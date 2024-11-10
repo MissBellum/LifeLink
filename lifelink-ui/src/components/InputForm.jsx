@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function InputForm() {
     return (
-        <div>
+        <div className='md:container md:mx-auto'>
             <div className="home__prompt__div">
                 <input 
                     id="home-prompt" 
