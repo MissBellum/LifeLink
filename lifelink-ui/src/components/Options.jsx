@@ -1,19 +1,22 @@
 import React from "react";
 
-
 function Options(props) {
-    const helpList = props.options?.map((option) => (
-        <div id={ option.id } key={ option.id } className="options__item">
-            <h4>{ option.name }</h4> 
-            <p className="options__text">{ option.description }</p>
-        </div>
+  const helpList = props.options?.map((option) => (
+    <div
+      id={option.id}
+      key={option.id}
+      className="options__item bg-white rounded-lg shadow-lg p-4 transform hover:scale-105 transition-transform duration-300 ease-out hover:shadow-2xl mb-4"
+    >
+      <h4 className="text-lg font-semibold text-gray-800 mb-2">{option.name}</h4>
+      <a href="#" className="options__text text-gray-600 text-sm">{option.description}</a>
+    </div>
   ));
 
-    return (
-        <div className="options__div">
-            { helpList }
-        </div>
-    )
+  return (
+    <div className="options__div grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-2">
+      {helpList}
+    </div>
+  );
 }
 
 export default Options;
