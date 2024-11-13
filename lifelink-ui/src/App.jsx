@@ -33,8 +33,8 @@ function App({ options }) {
         </div>
       </main>
 
-      <footer className="bg-gray-100 text-center py-1 shadow-inner">
-        <p className="text-gray-600 text-sm">
+      <footer className="bg-white-00 text-center py-1 shadow-inner">
+        <p className="text-gray-300 text-sm">
           © 2024 LifeLink. All rights reserved.
         </p>
       </footer>
