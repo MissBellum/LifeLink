@@ -8,7 +8,7 @@ function Options(props) {
       className="options__item bg-white rounded-lg shadow-lg p-4 transform hover:scale-105 transition-transform duration-300 ease-out hover:shadow-2xl mb-2"
     >
       <h4 className="text-lg font-semibold text-gray-800 mb-2">{option.name}</h4>
-      <a href="#" className="options__text text-gray-600 text-sm">{option.description}</a>
+      <a href="#" className="options__text font-sans text-gray-600 text-sm">{option.description}</a>
     </div>
   ));
 
