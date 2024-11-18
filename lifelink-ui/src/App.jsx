@@ -27,7 +27,7 @@ function App({ options }) {
             <Options options={options} />
           </section>
 
-          <section className="mt-8">
+          <section className="mt-11">
             <InputForm />
           </section>
         </div>
