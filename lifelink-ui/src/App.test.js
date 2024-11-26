@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+// import Options from './components/Options';
 
-test('renders learn react link', () => {
+test('renders emergency options', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText('Contact Police')).toBeInTheDocument();
+  expect(screen.getByText('Call Ambulance')).toBeVisible(); // test if fail
 });
