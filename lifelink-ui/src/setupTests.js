@@ -3,7 +3,7 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
-import { render, screen, expect } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import Options from './components/Options';
 
 test('renders emergency options', () => {
