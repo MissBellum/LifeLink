@@ -27,17 +27,17 @@ function App({ options }) {
             <Options options={options} />
           </section>
 
-          <section className="mt-11">
+          <section className="mt-16">
             <InputForm />
           </section>
         </div>
       </main>
 
-      <footer className="bg-white-300 text-center py-1 shadow-inner">
+      {/*<footer className="bg-white-300 text-center py-1 shadow-inner">
         <p className="text-gray-300 text-sm">
           © 2024 LifeLink. All rights reserved.
         </p>
-      </footer>
+      </footer>*/}
     </div>
   );
 }
