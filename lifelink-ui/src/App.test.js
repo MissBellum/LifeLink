@@ -17,7 +17,7 @@ afterEach(() => {
   jest.clearAllTimers();
 });
 
-test('renders emergency options', () => {
+test('renders App', () => {
   render(<App options={ OPTIONSDATA }/>);
   expect(screen.getByText('Police Assistance')).toBeInTheDocument();
   expect(screen.getByText('Medical Emergency')).toBeVisible(); // test if fail

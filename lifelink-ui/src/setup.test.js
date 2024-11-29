@@ -21,6 +21,8 @@ afterEach(() => {
 
 test('renders emergency options', () => {
     render(<Options options={ OPTIONSDATA } />);
-    expect(screen.getByText('Contact police')).toBeInTheDocument();
-    expect(screen.getByText('Get help')).toBeVisible(); // test if fail
+    OPTIONSDATA.forEach(option => {
+        expect(screen.getByText(option.name)).toBeInTheDocument();
+        expect(screen.getByText(option.description)).toBeInTheDocument();
+    });
 });
