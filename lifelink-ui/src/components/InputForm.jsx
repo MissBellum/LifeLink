@@ -18,7 +18,7 @@ function InputForm() {
               type="submit"
               className="home__submit__icon bg-[#ff6200] hover:bg-[#e65500] text-white w-12 h-10 rounded-full ml-2 transition duration-300 ease-in-out transform hover:scale-105"
             >
-              <FontAwesomeIcon size="lg" icon={faArrowRight} />
+              <FontAwesomeIcon size="2xl" icon={faArrowRight} />
             </button>
           </div>
         </div>

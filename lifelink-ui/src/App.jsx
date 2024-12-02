@@ -17,16 +17,16 @@ function App({ options }) {
 
       <main className="flex-grow py-4 px-4 overflow-y-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="home__content text-center mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800">
-              Welcome to LifeLink. How can I help?
-            </h2>
+          <div className="home__content text-center mt-4 mb-8">
+            <h4 className="text-2xl font-semibold text-gray-800">
+              We're here to help. How can we assist you?
+            </h4>
           </div>
 
           <section className="options__section mb-12">
             <Options options={options} />
           </section>
-          {/* reset margin top */}
+
           <section>
             <InputForm />
           </section>
