@@ -23,11 +23,11 @@ function App({ options }) {
             </h2>
           </div>
 
-          <section className="options__section mb-8">
+          <section className="options__section mb-12">
             <Options options={options} />
           </section>
-
-          <section className="mt-16">
+          {/* reset margin top */}
+          <section>
             <InputForm />
           </section>
         </div>
