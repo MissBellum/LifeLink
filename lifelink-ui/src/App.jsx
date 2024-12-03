@@ -2,7 +2,10 @@ import React from "react";
 import InputForm from "./components/InputForm";
 import Options from "./components/Options";
 
-function App({ options }) {
+function App(props) {
+  const helpList = props.options?.map((option) => (<Options id={option.id}
+    key={option.id} name={option.name} description={option.description} />));
+
   return (
     <div className="app bg-white min-h-screen flex flex-col overflow-hidden">
       <div className="app__header">
@@ -23,12 +26,16 @@ function App({ options }) {
             </h4>
           </div>
 
-          <section className="options__section mb-12">
-            <Options options={options} />
+          <section>
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 mb-10 gap-4 p-2">
+              { helpList }
+            </div>
           </section>
 
           <section>
-            <InputForm />
+            <div className="flex justify-center items-center w-full">
+              <InputForm />
+            </div>
           </section>
         </div>
       </main>
