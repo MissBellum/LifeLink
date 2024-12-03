@@ -9,7 +9,7 @@ function App(props) {
   return (
     <div className="app bg-white min-h-screen flex flex-col overflow-hidden">
       <div className="app__header">
-        <header className="header__text text-center text-3xl font-extrabold text-white py-2 px-6 relative">
+        <header className="text-center text-3xl font-extrabold text-white py-2 px-6 relative">
           <span className="absolute inset-0 bg-gradient-to-r from-[#ff6200] to-[#e65500] opacity-30 rounded-full"></span>
           <h1 className="relative z-10 text-white tracking-wide text-shadow-md">
             LifeLink
