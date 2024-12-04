@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import InputForm from "./components/InputForm";
 import Options from "./components/Options";
 
 function App(props) {
+  const [inputValue, setValue] = useState("");
   const helpList = props.options?.map((option) => (<Options id={option.id}
     key={option.id} name={option.name} description={option.description} />));
+  
+  function handleClick(e, text) {
+    e.preventDefault()
+    alert("hi")
+  }
 
   return (
     <div className="app bg-white min-h-screen flex flex-col overflow-hidden">
