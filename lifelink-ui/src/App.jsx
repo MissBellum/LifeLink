@@ -3,6 +3,7 @@ import InputForm from "./components/InputForm";
 import Options from "./components/Options";
 
 function App({ options }) {
+
   return (
     <div className="app bg-white min-h-screen flex flex-col overflow-hidden">
       <div className="app__header">
@@ -17,17 +18,17 @@ function App({ options }) {
 
       <main className="flex-grow py-4 px-4 overflow-y-auto">
         <div className="max-w-4xl mx-auto">
-          <div className="home__content text-center mb-8">
+          <div className="home__content text-center mt-4 mb-6">
             <h2 className="text-2xl font-semibold text-gray-800">
-              Welcome to LifeLink. How can I help?
+              We're here to help. How can we assist you?
             </h2>
           </div>
 
-          <section className="options__section mb-8">
-            <Options options={options} />
+          <section>
+            <Options options= { options }/>
           </section>
 
-          <section className="mt-16">
+          <section>
             <InputForm />
           </section>
         </div>

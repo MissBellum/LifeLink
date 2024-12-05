@@ -6,7 +6,7 @@ function InputForm() {
   return (
     <div className="flex justify-center items-center w-full">
       <form method="POST" action="" className="w-full max-w-2xl">
-        <div className="home__prompt__div flex items-center bg-white rounded-full shadow-lg p-3 w-full">
+        <div className="home__prompt__div flex items-center bg-white rounded-full shadow-lg p-3 mt-10 w-full">
           <input
             id="home-prompt"
             className="home__prompt flex-grow rounded-l-full px-6 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ff6200] placeholder-gray-400"
