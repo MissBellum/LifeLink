@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('lifelink', include('lifelink.urls')),
-    # path('', RedirectView.as_view(url='lifelink/', permanent=True)),
+    path('', include('lifelinkbot.urls')),
+    # path('', RedirectView.as_view(url='', permanent=True)),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
