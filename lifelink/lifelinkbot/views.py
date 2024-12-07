@@ -18,8 +18,8 @@ def generate(prompt):
 
 # print(response.text)
 
-# def home(request):
-    # return render(request, 'home.html')
+def index(request):
+    return render(request, 'react/index.html')
 
 async def get_help(request):
     if request.method == 'POST':
