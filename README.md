@@ -1,4 +1,4 @@
-# LifeLink App
+# LifeLink App (In Progress)
 LifeLink is an emergency response application designed to connect users with relevant authorities, including police, hospitals, and support organizations, during critical situations. The app provides quick access to life-saving information and tools in times of need.
 
 ## Features
