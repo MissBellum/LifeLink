@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import JsonResponse
-from .models import UserMessage, BotResponse
+# from django.http import JsonResponse
+# from .models import UserMessage, BotResponse
 
 import os
 from dotenv import load_dotenv
@@ -16,7 +16,7 @@ def generate(prompt):
     response = model.generate_content(prompt)
     return response.text
 
-# print(response.text)
+print(generate('tell me a story about Chisom in 10 lines'))
 
 
 # async def get_help(request):

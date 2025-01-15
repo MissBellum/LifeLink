@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function InputForm() {
+  // test function
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("works");
+  }
+
   return (
     <div className="flex justify-center items-center w-full">
       <form method="POST" action="" className="w-full max-w-2xl">
