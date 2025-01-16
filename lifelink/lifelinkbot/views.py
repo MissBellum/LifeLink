@@ -16,7 +16,7 @@ def generate(prompt):
     response = model.generate_content(prompt)
     return response.text
 
-print(generate('tell me a story about Chisom in 10 lines'))
+# print(generate('tell me a story about Chisom in 10 lines'))
 
 
 # async def get_help(request):

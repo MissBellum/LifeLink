@@ -1,6 +1,6 @@
 {
   "name": "lifelink-ui",
-  "homepage": "/static/",
+  "homepage": "lifelink",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

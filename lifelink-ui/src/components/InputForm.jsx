@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function InputForm() {
+
+  const [inputText, setInputText] = useState("");
+
   // test function
   function handleSubmit(e) {
-    e.preventDefault();
-    alert("works");
+    setInputText(e.target.value);
   }
 
   return (
@@ -18,6 +20,8 @@ function InputForm() {
             className="home__prompt flex-grow rounded-l-full px-6 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#ff6200] placeholder-gray-400"
             type="text"
             placeholder="Message"
+            value={ inputText }
+            onChange={ handleSubmit }
           />
           <div className="pr-5">
             <button
