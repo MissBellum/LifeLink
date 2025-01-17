@@ -7,9 +7,29 @@ function InputForm() {
   const [inputText, setInputText] = useState("");
 
   // test function
-  function handleSubmit(e) {
+  function handleInputChange(e) {
     setInputText(e.target.value);
   }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://backend-url/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: inputText }),
+      });
+      const data = await response.json();
+      console.log('Chatbot response:', data); // Replace this with logic to display the chatbot's response
+    } catch (error) {
+      console.error('Error sending message to backend:', error);
+    }
+
+    setInputText(''); // Clear the input field
+  };
+  
 
   return (
     <div className="flex justify-center items-center w-full">
@@ -21,7 +41,7 @@ function InputForm() {
             type="text"
             placeholder="Message"
             value={ inputText }
-            onChange={ handleSubmit }
+            onChange={ handleInputChange }
           />
           <div className="pr-5">
             <button
