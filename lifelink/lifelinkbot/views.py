@@ -1,6 +1,6 @@
 from django.shortcuts import render
-# from django.http import JsonResponse
-# from .models import UserMessage, BotResponse
+from django.http import JsonResponse
+from .models import UserMessage, BotResponse
 
 import os
 from dotenv import load_dotenv
@@ -19,20 +19,20 @@ def generate(prompt):
 # print(generate('tell me a story about Chisom in 10 lines'))
 
 
-# async def get_help(request):
-#     if request.method == 'POST':
-#         prompt = request.POST.get('prompt')
+async def get_help(request):
+    if request.method == 'POST':
+        prompt = request.POST.get('prompt')
         
-#         # create user prompt and store in database
-#         user_prompt = UserMessage.objects.create(message=prompt, created_at=timezone.now())
-#         user_prompt.save()
+        # create user prompt and store in database
+        user_prompt = UserMessage.objects.create(message=prompt, created_at=timezone.now())
+        user_prompt.save()
         
-#         # generate AI response
-#         response =  await generate(prompt)
+        # generate AI response
+        response =  await generate(prompt)
         
-#         # create and store bot response
-#         bot_response = BotResponse.objects.create(response=response)
-#         bot_response.save()
+        # create and store bot response
+        bot_response = BotResponse.objects.create(response=response)
+        bot_response.save()
         
-#         return JsonResponse({'response': response})
+        return JsonResponse({'response': response})
     

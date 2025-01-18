@@ -11,13 +11,23 @@ function InputForm() {
     setInputText(e.target.value);
   }
 
+  function getCSRFToken() {
+    return document.cookie
+    .split('; ')
+    .find((row) => row.startsWith('csrftoken='))
+    ?.split('=')[1];
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
+    const csrfToken = getCSRFToken();
+
     try {
-      const response = await fetch('http://127.0.0.1:8000/', {
+      const response = await fetch('get-help/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-CSRFToken': csrfToken
         },
         body: JSON.stringify({ message: inputText }),
       });
