@@ -14,26 +14,28 @@ function InputForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const response = await fetch('http://backend-url/api/chat', {
+      const response = await fetch('http://127.0.0.1:8000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ message: inputText }),
       });
+
       const data = await response.json();
-      console.log('Chatbot response:', data); // Replace this with logic to display the chatbot's response
+      console.log('Chatbot response:', data); 
+
     } catch (error) {
       console.error('Error sending message to backend:', error);
     }
 
-    setInputText(''); // Clear the input field
+    setInputText('');
   };
   
 
   return (
     <div className="flex justify-center items-center w-full">
-      <form method="POST" action="" className="w-full max-w-2xl">
+      <form method="POST" onSubmit={ handleSubmit } action="" className="w-full max-w-2xl">
         <div className="home__prompt__div flex items-center bg-white rounded-full shadow-lg p-3 mt-10 w-full">
           <input
             id="home-prompt"
